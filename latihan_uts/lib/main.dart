@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:latihan_uts/latihan_screen.dart';
+// import 'package:latihan_widget/latihanwidget.dart';
+import 'package:latihan_widget/tugaswidget.dart';
 
 void main() {
   runApp(const MyApp());
@@ -8,16 +9,11 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Latihan UTS',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
-      home: const LatihanScreen(),
+    return const MaterialApp(
+      // home: WidgetDemo(),
+      home: GaleriFoto(),
     );
   }
 }
