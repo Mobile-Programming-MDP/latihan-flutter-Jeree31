@@ -7,7 +7,7 @@ class WidgetDemo extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
        appBar: AppBar(
-        title: Text("Widget Demo"),
+        title: const Text("Widget Demo"),
         backgroundColor: Colors.blue,
       ),
       body: Column(
@@ -18,7 +18,7 @@ class WidgetDemo extends StatelessWidget {
             padding: const EdgeInsets.all(16),
             color: Colors.blue,
             width: double.infinity,
-            child: Center(child: Text("Jeremy Allegrato Hartono", style: TextStyle(fontSize: 20, color: Colors.white), textAlign: TextAlign.center,)),
+            child: const Center(child: Text("Jeremy Allegrato Hartono", style: TextStyle(fontSize: 20, color: Colors.white), textAlign: TextAlign.center,)),
           ),
           ElevatedButton(
             onPressed: (){},
@@ -27,7 +27,7 @@ class WidgetDemo extends StatelessWidget {
               child: Text("Ini adalah Tombol Elevated"),
               ),
             ),
-            SizedBox(height: 16),
+            const SizedBox(height: 16),
             const Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
